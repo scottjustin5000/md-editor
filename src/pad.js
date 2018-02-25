@@ -8,6 +8,7 @@ import { withStyles } from 'material-ui/styles'
 let converter = new showdown.Converter()
 converter.setFlavor('github')
 converter.setOption('omitExtraWLInCodeBlocks', false)
+
 const styles = theme => ({
   root: {
     marginTop: '10px',
@@ -56,7 +57,6 @@ links:
 
   componentDidMount () {
     let opts = converter.getOptions()
-    console.log(opts)
     this.convert(this.state.md)
   }
 
