@@ -56,7 +56,6 @@ links:
   }
 
   componentDidMount () {
-    let opts = converter.getOptions()
     this.convert(this.state.md)
   }
 
